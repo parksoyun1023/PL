@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카테고리별 장소 검색하기</title>
+    
+    <link rel="stylesheet" href="test.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3571464bbcb74d5f9019576cfc9d2c0d&libraries=services"></script>
+    <script src="test.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar" id="sidebar">
+        <button class="toggle-btn" id="toggleBtn">▶</button>
+        <ul id="category">
+            <li id="BK9" data-order="0"> 
+                <span class="category_bg bank"></span> 은행
+            </li>       
+            <li id="MT1" data-order="1"> 
+                <span class="category_bg mart"></span> 마트
+            </li>  
+            <li id="PM9" data-order="2"> 
+                <span class="category_bg pharmacy"></span> 약국
+            </li>  
+            <li id="OL7" data-order="3"> 
+                <span class="category_bg oil"></span> 주유소
+            </li>  
+            <li id="CE7" data-order="4"> 
+                <span class="category_bg cafe"></span> 카페
+            </li>  
+            <li id="CS2" data-order="5"> 
+                <span class="category_bg store"></span> 편의점
+            </li>      
+        </ul>
+    </div>
+    <div class="map_wrap">
+        <div id="map"></div>
+    </div>
+</div>
+</body>
+</html>
